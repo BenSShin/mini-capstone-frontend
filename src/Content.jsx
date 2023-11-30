@@ -5,6 +5,7 @@ import { ProductNew } from "./ProductNew";
 import { Login } from "./LogIn";
 import { LogoutLink } from "./LogoutLink";
 import { Signup } from "./SignUp";
+import { Home } from "./Home";
 import { Routes, Route } from "react-router-dom";
 
 export function Content() {
@@ -32,6 +33,7 @@ export function Content() {
     <div>
       <h1>Welcome!</h1>
       <Routes>
+        <Route path="/" element={<Home />} />
         <Route path="/signup" element={<Signup />} />
         <Route path="/login" element={<Login />} />
         <Route path="/products/new" element={<ProductNew onCreateProduct={handleCreateProduct} />} />
