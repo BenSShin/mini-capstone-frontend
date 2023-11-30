@@ -1,4 +1,6 @@
 /* eslint-disable react/prop-types */
+import { Link } from "react-router-dom";
+
 export function ProductsIndex(props) {
   return (
     <div>
@@ -9,6 +11,7 @@ export function ProductsIndex(props) {
           <img src="" />
           <p>Price: {product.price}</p>
           <p>Description: {product.description}</p>
+          <Link to="/products/:id">More Info</Link>
         </div>
       ))}
     </div>
