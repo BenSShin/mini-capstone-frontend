@@ -42,7 +42,7 @@ export function Content() {
   useEffect(handleShowProduct);
 
   return (
-    <div>
+    <div className="bg-[#ffeeb3]">
       <h1>Welcome!</h1>
       <Routes>
         <Route path="/" element={<Home />} />
