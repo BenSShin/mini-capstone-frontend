@@ -5,7 +5,7 @@ export function ProductsIndex(props) {
   return (
     <div className="text-center">
       <h1 className="text-3xl font-bold underline my-6 space-x-3">All Products</h1>
-      <div className="md:z-20 grid grid-cols-3 gap-3 mx-3">
+      <div className="grid grid-cols-3 gap-3 mx-3">
         {props.products.map((product) => (
           <div className="font-serif bg-[#ffd14a] rounded-md" key={product.id}>
             <div className="space-y-2 py-4">
