@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 export function ProductsIndex(props) {
   return (
     <div>
-      <h1>All Products</h1>
+      <h1 className="text-3xl font-bold underline">All Products</h1>
       {props.products.map((product) => (
         <div key={product.id}>
           <h2>{product.name}</h2>
