@@ -14,16 +14,16 @@ export function ProductNew(props) {
           <div className="my-3">
             <p>Name</p>
             <input
-              className="rounded placeholder:px-px bg-slate-300 border-2 border-black"
+              className="rounded pl-2 bg-[#f2ecbe] border-2 border-black"
               type="text"
               name="name"
-              placeholder="  Name"
+              placeholder="Name"
             />
           </div>
           <div className="my-3">
             <p>Price</p>
             <input
-              className="rounded placeholder:px-px bg-slate-300  border-2 border-black"
+              className="rounded pl-2 bg-[#f2ecbe]  border-2 border-black"
               type="number"
               name="price"
               placeholder="Price"
@@ -32,7 +32,7 @@ export function ProductNew(props) {
           <div className="my-3">
             <p>Supplier ID</p>
             <input
-              className="rounded placeholder:px-px bg-slate-300 border-2 border-black"
+              className="rounded pl-2 bg-[#f2ecbe] border-2 border-black"
               type="number"
               name="supplier_id"
               placeholder="Supplier ID"
@@ -41,7 +41,7 @@ export function ProductNew(props) {
           <div className="my-3">
             <p>Stock</p>
             <input
-              className="rounded placeholder:px-px bg-slate-300 border-2 border-black"
+              className="rounded pl-2 bg-[#f2ecbe] border-2 border-black"
               type="number"
               name="in_stock"
               placeholder="Stock"
@@ -50,7 +50,7 @@ export function ProductNew(props) {
           <div className="my-3">
             <p>Description:</p>
             <input
-              className="rounded placeholder:px-px bg-slate-300 border-2 border-black"
+              className="rounded pl-2 bg-[#f2ecbe] border-2 border-black"
               type="text"
               name="description"
               placeholder="Description"
