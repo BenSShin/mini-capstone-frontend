@@ -3,7 +3,6 @@ import { useState, useEffect } from "react";
 import { ProductsIndex } from "./ProductsIndex";
 import { ProductNew } from "./ProductNew";
 import { Login } from "./LogIn";
-import { LogoutLink } from "./LogoutLink";
 import { Signup } from "./SignUp";
 import { Home } from "./Home";
 import { Routes, Route } from "react-router-dom";
@@ -42,8 +41,7 @@ export function Content() {
   useEffect(handleShowProduct);
 
   return (
-    <div className="bg-[#ffeeb3]">
-      <h1>Welcome!</h1>
+    <div className="z-0 bg-[#ffe488]">
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/signup" element={<Signup />} />
@@ -52,7 +50,6 @@ export function Content() {
         <Route path="/products" element={<ProductsIndex products={products} />} />
         <Route path="/products/:id" element={<ProductsShow product={product} />} />
       </Routes>
-      <LogoutLink />
     </div>
   );
 }
