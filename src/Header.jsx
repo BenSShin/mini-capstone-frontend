@@ -8,7 +8,8 @@ export function Header() {
         {localStorage.jwt === undefined ? (
           <>
             <Link to="/">Home</Link> | <Link to="/products">Products</Link> |{" "}
-            <Link to="/products/new">New Product</Link> | <Link to="/login">Login</Link> | <Link to="/signup"></Link>
+            <Link to="/products/new">New Product</Link> | <Link to="/login">Login</Link> |{" "}
+            <Link to="/signup">Sign Up</Link>
           </>
         ) : (
           <>

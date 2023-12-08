@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import { ProductsIndex } from "./ProductsIndex";
 import { ProductNew } from "./ProductNew";
 import { Login } from "./LogIn";
-import { SignUp } from "./SignUp";
+import { Signup } from "./SignUp";
 import { Home } from "./Home";
 import { Routes, Route } from "react-router-dom";
 import { ProductsShow } from "./ProductsShow";
@@ -44,7 +44,7 @@ export function Content() {
     <div className="z-0 bg-[#ffe488]">
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/signup" element={<SignUp />} />
+        <Route path="/signup" element={<Signup />} />
         <Route path="/login" element={<Login />} />
         <Route path="/products/new" element={<ProductNew onCreateProduct={handleCreateProduct} />} />
         <Route path="/products" element={<ProductsIndex products={products} />} />
