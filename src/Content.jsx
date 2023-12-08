@@ -2,7 +2,7 @@ import axios from "axios";
 import { useState, useEffect } from "react";
 import { ProductsIndex } from "./ProductsIndex";
 import { ProductNew } from "./ProductNew";
-import { Login } from "./LogIn";
+import { Login } from "./Login";
 import { Signup } from "./SignUp";
 import { Home } from "./Home";
 import { Routes, Route } from "react-router-dom";
@@ -16,14 +16,14 @@ export function Content() {
 
   const handleIndexProducts = () => {
     console.log("handleIndexProducts");
-    axios.get("http://localhost:3000/products.json").then((response) => {
+    axios.get("https://mini-capstone-api-8gre.onrender.com/products.json").then((response) => {
       console.log(response.data);
       setProducts(response.data);
     });
   };
 
   const handleShowProduct = () => {
-    axios.get(`http://localhost:3000/products/${params.id}.json`).then((response) => {
+    axios.get(`https://mini-capstone-api-8gre.onrender.com/products/${params.id}.json`).then((response) => {
       console.log(response.data);
       setProduct(response.data);
     });
@@ -31,7 +31,7 @@ export function Content() {
 
   const handleCreateProduct = (params, successCallBack) => {
     console.log("handleCreateProduct", params);
-    axios.post("http://localhost:3000/products.json", params).then((response) => {
+    axios.post("https://mini-capstone-api-8gre.onrender.com/products.json", params).then((response) => {
       setProducts([...products, response.data]);
       successCallBack();
     });
