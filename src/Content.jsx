@@ -2,7 +2,7 @@ import axios from "axios";
 import { useState, useEffect } from "react";
 import { ProductsIndex } from "./ProductsIndex";
 import { ProductNew } from "./ProductNew";
-import { Login } from "./Login";
+import { Login } from "./LogIn";
 import { Signup } from "./SignUp";
 import { Home } from "./Home";
 import { Routes, Route } from "react-router-dom";
